@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Star Restaurant</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f5f0e1;
+            padding: 5px;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: rgba(26, 26, 46, 0.98);
+            border: 1px solid #d4a537;
+            border-radius: 12px;
+            padding: 18px 24px;
+            box-shadow: 0 0 25px rgba(212, 165, 55, 0.3);
+        }
+        .header { text-align: center; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 2px solid #d4a537; }
+        h1 { font-size: 1.6rem; font-weight: 400; letter-spacing: 2px; color: #d4a537; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); margin-bottom: 3px; }
+        .subtitle { font-size: 0.7rem; color: #c9b896; letter-spacing: 1px; font-style: italic; }
+        .welcome-text { text-align: center; font-size: 0.8rem; line-height: 1.4; color: #e8ddc7; margin-bottom: 12px; font-style: italic; }
+        .price-title { text-align: center; font-size: 0.85rem; color: #d4a537; margin-bottom: 10px; font-weight: 600; letter-spacing: 1px; }
+        h2 { font-size: 1rem; color: #d4a537; margin-bottom: 6px; padding-bottom: 3px; border-bottom: 1px solid rgba(212, 165, 55, 0.3); font-weight: 400; letter-spacing: 0.5px; }
+        h2::before { content: '◆'; margin-right: 6px; font-size: 0.8rem; color: #d4a537; }
+        .menu-section { margin-bottom: 10px; }
+        .menu-list { list-style: none; }
+        .menu-item { display: flex; justify-content: space-between; align-items: center; padding: 7px 10px; margin-bottom: 4px; background: linear-gradient(90deg, rgba(212, 165, 55, 0.08) 0%, rgba(212, 165, 55, 0.02) 100%); border: 1px solid rgba(212, 165, 55, 0.15); border-radius: 6px; }
+        .menu-name { font-size: 0.8rem; color: #f5f0e1; font-weight: 500; }
+        .menu-price { font-size: 0.8rem; color: #d4a537; font-weight: 600; font-family: 'Georgia', serif; white-space: nowrap; }
+        .address-section { text-align: center; padding-top: 8px; border-top: 2px solid rgba(212, 165, 55, 0.3); }
+        .address-icon { display: inline-block; margin-bottom: 4px; color: #d4a537; font-size: 1rem; }
+        .address-text { font-size: 0.8rem; line-height: 1.3; color: #c9b896; max-width: 500px; margin: 0 auto; }
+        .copyright { text-align: center; font-size: 0.65rem; color: #8a7a5a; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Royal Star Restaurant</h1>
+            <p class="subtitle">EST. 2026 &bull; FINE DINING EXPERIENCE</p>
+        </header>
+        <div class="video-section" style="margin-bottom: 12px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(212, 165, 55, 0.3);">
+            <video width="100%" controls style="display: block; width: 100%; max-height: 400px; height: auto;">
+                <source src="video/snaptik_7642122020595043615_v3.mp4" type="video/mp4">
+                Browser Anda tidak mendukung pemutaran video.
+            </video>
+        </div>
+        <p class="welcome-text">Selamat datang di Royal Star Restaurant, tempat menikmati hidangan berkualitas dengan cita rasa istimewa dan suasana yang elegan. Kami menyajikan makanan dan minuman pilihan untuk pengalaman bersantap yang berkesan.</p>
+        
+        <p class="price-title">Daftar Harga Menu Restoran</p>
+        
+        <section class="menu-section">
+            <h2>Daftar Menu Makanan</h2>
+            <ul class="menu-list">
+                <li class="menu-item"><span class="menu-name">Wagyu Steak Premium</span><span class="menu-price">Rp350.000 &nbsp;(&#36;22)</span></li>
+                <li class="menu-item"><span class="menu-name">Lobster Thermidor</span><span class="menu-price">Rp400.000 &nbsp;(&#36;25)</span></li>
+                <li class="menu-item"><span class="menu-name">Salmon Steak Royal</span><span class="menu-price">Rp280.000 &nbsp;(&#36;18)</span></li>
+                <li class="menu-item"><span class="menu-name">Truffle Pasta</span><span class="menu-price">Rp250.000 &nbsp;(&#36;16)</span></li>
+                <li class="menu-item"><span class="menu-name">Beef Tenderloin Black Pepper</span><span class="menu-price">Rp320.000 &nbsp;(&#36;20)</span></li>
+            </ul>
+        </section>
+        <section class="menu-section">
+            <h2>Daftar Menu Minuman</h2>
+            <ul class="menu-list">
+                <li class="menu-item"><span class="menu-name">Royal Berry Mocktail</span><span class="menu-price">Rp85.000 &nbsp;(&#36;5)</span></li>
+                <li class="menu-item"><span class="menu-name">Golden Mango Juice</span><span class="menu-price">Rp75.000 &nbsp;(&#36;5)</span></li>
+                <li class="menu-item"><span class="menu-name">Premium Chocolate</span><span class="menu-price">Rp90.000 &nbsp;(&#36;6)</span></li>
+                <li class="menu-item"><span class="menu-name">Strawberry Sparkling</span><span class="menu-price">Rp80.000 &nbsp;(&#36;5)</span></li>
+                <li class="menu-item"><span class="menu-name">Vanilla Cream Latte</span><span class="menu-price">Rp70.000 &nbsp;(&#36;4)</span></li>
+            </ul>
+        </section>
+        <section class="address-section">
+            <div class="address-icon">📍</div>
+            <p class="address-text">Jl. Royal Star No. 88, Tangerang Selatan, Banten, Indonesia</p>
+        </section>
+        <p class="copyright">&copy; 2026 Royal Star Restaurant. All rights reserved.</p>
+    </div>
+</body>
+</html>
